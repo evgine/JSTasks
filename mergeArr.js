@@ -1,14 +1,16 @@
 function merge(arr1, arr2, arr3, arr4, arr5) {
-    let arr = [...arr1, ...arr2, ...arr3, ...arr4, ...arr5]
+    
+    let arr = [...arr1, ...arr2, ...arr3, ...arr4, ...arr5];
     let arrMap = new Map();
     let newArr = [];
-    for (let i = 0; i <= 10; i++) {
-        arrMap.set(i, 0)
+    
+    for (let i = Math.min(...arr); i <= Math.max(...arr); i++) {
+        arrMap.set(i, 0);
     }
     for (let itemArr of arr) {
         arrMap.forEach(function (value, key) {
             if (itemArr === key) {
-                arrMap.set(key, value + 1)
+                arrMap.set(key, value + 1);
             }
         })
     }
@@ -17,5 +19,5 @@ function merge(arr1, arr2, arr3, arr4, arr5) {
             newArr.push(key);
         }
     })
-    return newArr
+    return newArr;
 }
