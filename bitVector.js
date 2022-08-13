@@ -26,5 +26,5 @@ class BitVector{
 let vector = new BitVector(64);
 vector.set(34);
 vector.set(21)
-vector.clear(21)
+
 console.log(vector.get(34),vector.get(21));
