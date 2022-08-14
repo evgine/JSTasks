@@ -19,3 +19,9 @@ function reverse(str) {
     }
     return arr.reverse().join('');
 }
+
+OR
+
+function reverse (str){
+    return Array.from(str).reverse().join("");
+}
