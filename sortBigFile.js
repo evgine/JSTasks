@@ -13,7 +13,7 @@ const rl = readline.createInterface({
     input: fileStream,
 });
 
-let writeFile = fs.createWriteStream("input.txt", {
+let writeFile = fs.createWriteStream("output.txt", {
     flags: 'a'
 })
 
