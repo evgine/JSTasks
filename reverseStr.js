@@ -1,4 +1,4 @@
-function reverse(str){
+function reverse(str) {
     let arr = [];
     let result = '';
     for (let i of str) {
@@ -9,4 +9,13 @@ function reverse(str){
     }
     return result;
 }
-console.log(reverse("This is 🕸 spider web ✅"))
+
+OR
+
+function reverse(str) {
+    let arr = [];
+    for (const i of str) {
+        arr.push(elem)
+    }
+    return arr.reverse().join('');
+}
