@@ -10,4 +10,4 @@ function isUnique(str){
     return "String is unique"
 }
 
-//NOTE:
+//NOTE: This solution doesn't work for complex emojis yet: e.g. 👨‍👩‍👦‍👦
