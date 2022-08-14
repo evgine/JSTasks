@@ -25,3 +25,5 @@ OR
 function reverse (str){
     return Array.from(str).reverse().join("");
 }
+
+//NOTE: Neither solution works for complex emojis yet: e.g. 👨‍👩‍👦‍👦
